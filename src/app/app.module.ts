@@ -11,6 +11,9 @@ import { SharedModule } from './shader/shader.module';
 //temporal
 import { FormsModule } from '@angular/forms';
 
+//Servicios
+import { ServiceModule } from './services/service.module';
+
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
@@ -21,14 +24,15 @@ import { RegisterComponent } from './login/register.component';
   declarations: [
     AppComponent,
     LoginComponent,
-    RegisterComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
     APP_ROUTES,
     PagesModule,
     SharedModule,
-    FormsModule
+    FormsModule,
+    ServiceModule
   ],
   providers: [],
   bootstrap: [AppComponent]
