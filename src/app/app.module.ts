@@ -5,7 +5,6 @@ import { NgModule } from '@angular/core';
 import { APP_ROUTES } from './app.routes';
 
 //Modulos
-import { PagesModule } from './pages/pages.module';
 import { SharedModule } from './shader/shader.module';
 
 //temporal
@@ -17,7 +16,7 @@ import { ServiceModule } from './services/service.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
-import { Prueba1Component } from './components/prueba1/prueba1.component';
+import { PagesComponent } from './pages/pages.component';
 
 
 
@@ -26,16 +25,15 @@ import { Prueba1Component } from './components/prueba1/prueba1.component';
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    Prueba1Component
+    PagesComponent
   ],
   imports: [
     BrowserModule,
     APP_ROUTES,
-    PagesModule,
     SharedModule,
     FormsModule,
     ReactiveFormsModule,
-    ServiceModule
+    ServiceModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
