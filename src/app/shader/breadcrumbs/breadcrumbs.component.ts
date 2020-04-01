@@ -15,8 +15,8 @@ export class BreadcrumbsComponent implements OnInit {
   constructor(private router: Router,
     private title: Title,
     private meta: Meta
-    
-    ) {
+
+  ) {
 
     this.getDataRoute()
       .subscribe(data => {
@@ -30,8 +30,7 @@ export class BreadcrumbsComponent implements OnInit {
           content: this.titulo
         };
 
-        this.meta.updateTag( metaTag )
-;
+        this.meta.updateTag(metaTag);
       });
   }
 
