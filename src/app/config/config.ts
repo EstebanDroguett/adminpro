@@ -1,1 +1,1 @@
-export const URL_SERVICIOS = 'https://adminpro-demo.herokuapp.com/';
+export const URL_SERVICIOS = 'https://adminpro-demo.herokuapp.com';
